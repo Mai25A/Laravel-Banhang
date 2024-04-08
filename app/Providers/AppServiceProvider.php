@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         //
-        Facades\View::composer(['layout.navbar','product_type'], function (View $view) {
+        Facades\View::composer(['layout.header','product_type'], function (View $view) {
             $producttypes=ProductType::all();
             //truyền biến $producttypes cho view header và product-type thông qua biến $view
             $view->with('producttypes',$producttypes);

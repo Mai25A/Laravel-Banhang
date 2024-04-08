@@ -24,5 +24,5 @@ Route::get('index',[HomeController::class,'index'])->name('index');
 // Route::get('/layout',function(){
 //     return view('layout.master');
 // });
-//Route::get('/product-type/{id}',[HomeController::class,'getProductType'])->name('getProductType');
+Route::get('/product-type/{id}',[HomeController::class,'getProductType'])->name('getProductType');  
 Route::get('add-to-cart/{id}', [HomeController::class, 'addToCart'])->name('addToCart');

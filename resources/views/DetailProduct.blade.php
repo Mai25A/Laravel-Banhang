@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('main_content')
+@section('content')
 	
 	<div class="container">
 		<div id="content">
